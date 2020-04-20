@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "name": "Aufgabe 1",
+      "setup": "g++ hallo.cc -o hallo",
+      "run": "./hallo",
+      "input": "",
+      "output": "Hallo Welt!\r\n",
+      "comparison": "exact",
+      "timeout": 2,
+      "points": 4
+    }
+  ]
+}
