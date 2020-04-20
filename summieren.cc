@@ -3,7 +3,7 @@
 
 int main() {
   std::ifstream dataIn("daten.txt");
-  std::ofstream dataOut("datensumme.txt");
+  //std::ofstream dataOut("datensumme.txt");
   for (int i; i < 234; ++i) {
     int x;
     int y;
@@ -12,8 +12,8 @@ int main() {
     std ::cout << x << " " << y << std ::endl;
     int z = x + y;
     std ::cout << z << std::endl;
-    dataOut << z;
+    //dataOut << z;
   }
-  dataOut.close();
+  //dataOut.close();
   dataIn.close();
 }
