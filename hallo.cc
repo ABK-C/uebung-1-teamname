@@ -1,5 +1,3 @@
-# include <iostream>
+#include <iostream>
 
-int main () {
-std :: cout << " Hallo   Welt !" << std :: endl ;
-}
+int main() { std ::cout << " Hallo   Welt !" << std ::endl; }
