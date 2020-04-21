@@ -5,8 +5,8 @@
       "setup": "g++ hallo.cc -o hallo",
       "run": "./hallo",
       "input": "",
-      "output": "Hallo Welt!\r\n",
-      "comparison": "exact",
+      "output": ".*Hallo.*\r\n",
+      "comparison": "regex",
       "timeout": 2,
       "points": 4
     },
