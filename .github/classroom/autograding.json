@@ -8,7 +8,7 @@
       "output": ".*Hallo.*\r\n",
       "comparison": "regex",
       "timeout": 2,
-      "points": 4
+      "points": null
     },
     {
       "name": "Aufgabe 2",
@@ -18,7 +18,7 @@
       "output": "4\r\n2\r\n3\r\n1\r\n3\r\n2\r\n2\r\n1\r\n5\r\n0\r\n4\r\n4\r\n3\r\n2\r\n2\r\n3\r\n2\r\n2\r\n4\r\n4\r\n5\r\n3\r\n4\r\n3\r\n3\r\n2\r\n6\r\n0\r\n2\r\n6\r\n5\r\n4\r\n2\r\n2\r\n1\r\n2\r\n4\r\n2\r\n4\r\n1\r\n3\r\n7\r\n2\r\n4\r\n0\r\n2\r\n1\r\n3\r\n3\r\n4\r\n3\r\n6\r\n5\r\n5\r\n2\r\n7\r\n4\r\n0\r\n2\r\n3\r\n0\r\n3\r\n6\r\n8\r\n4\r\n4\r\n0\r\n4\r\n4\r\n2\r\n2\r\n4\r\n4\r\n4\r\n3\r\n3\r\n3\r\n4\r\n2\r\n0\r\n8\r\n3\r\n2\r\n4\r\n5\r\n4\r\n1\r\n3\r\n3\r\n3\r\n3\r\n3\r\n4\r\n4\r\n5\r\n2\r\n5\r\n3\r\n3\r\n2\r\n6\r\n6\r\n4\r\n3\r\n1\r\n7\r\n2\r\n5\r\n1\r\n2\r\n1\r\n3\r\n2\r\n2\r\n2\r\n3\r\n2\r\n4\r\n3\r\n3\r\n1\r\n3\r\n4\r\n1\r\n2\r\n3\r\n2\r\n0\r\n3\r\n2\r\n4\r\n2\r\n3\r\n5\r\n3\r\n2\r\n4\r\n2\r\n3\r\n3\r\n1\r\n2\r\n2\r\n4\r\n3\r\n4\r\n5\r\n4\r\n1\r\n1\r\n3\r\n5\r\n2\r\n4\r\n1\r\n5\r\n4\r\n3\r\n1\r\n1\r\n4\r\n3\r\n4\r\n6\r\n2\r\n6\r\n3\r\n3\r\n4\r\n5\r\n4\r\n3\r\n2\r\n4\r\n2\r\n1\r\n2\r\n2\r\n3\r\n4\r\n6\r\n6\r\n0\r\n3\r\n2\r\n6\r\n4\r\n4\r\n3\r\n5\r\n0\r\n3\r\n4\r\n3\r\n2\r\n2\r\n2\r\n0\r\n2\r\n1\r\n3\r\n6\r\n3\r\n3\r\n3\r\n5\r\n2\r\n3\r\n4\r\n2\r\n5\r\n3\r\n1\r\n6\r\n6\r\n2\r\n6\r\n6\r\n4\r\n0\r\n3\r\n1\r\n3\r\n5\r\n3\r\n2\r\n1\r\n2\r\n4\r\n7\r\n5\r\n4\r\n1\r\n6",
       "comparison": "exact",
       "timeout": 10,
-      "points": 16
+      "points": null
     }
   ]
 }
