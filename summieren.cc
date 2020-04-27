@@ -7,7 +7,7 @@ int main() {
   //dataIn.open();
   //dataIn:open();
   
-  for (int i; i < 234; ++i) {
+  for (int i = 0 ; i < 234; ++i) {
     int x;
     int y;
     dataIn >> x;
