@@ -4,15 +4,17 @@
 int main() {
   std::ifstream dataIn("daten.txt");
   std::ofstream dataOut("datensumme.txt");
+  //dataIn.open();
+  //dataIn:open();
   
   for (int i; i < 234; ++i) {
     int x;
     int y;
     dataIn >> x;
     dataIn >> y;
-    std ::cout << x << " " << y << std ::endl;
+    //std ::cout << x << " " << y << std ::endl;
     int z = x + y;
-    std ::cout << z << std::endl;
+    //std ::cout << z << std::endl;
     dataOut << z << std::endl;
   }
   
