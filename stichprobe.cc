@@ -17,7 +17,7 @@ int main() {
   double mittelwert = summe / n;
   std::cout << mittelwert << "\n";
 
-  // abweichung
+  // varianz
   std::ifstream dataIn2("datensumme.txt");
   int summe2 = 0;
   while (!dataIn2.eof()) {
@@ -27,9 +27,9 @@ int main() {
     summe2 = summe2 + b;
   }
   dataIn2.close();
-  double abweichung = summe2 / n;
-  std::cout << abweichung << "\n";
+  double varianz = summe2 / n;
+  std::cout << varianz << "\n";
 
-  // varianz
-  std::cout << sqrt(abweichung) << "\n";
+  // abweichung
+  std::cout << sqrt(varianz) << "\n";
 }
