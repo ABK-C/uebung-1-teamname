@@ -1,35 +1,54 @@
-#include <cmath>
-#include <fstream>
-#include <iostream>
+#include<fstream>
+#include<iostream>
+#include<cmath>
+#include<vector>
+using namespace std;
+
+//Berechnung des Mittelwertes
+double calculateAverage(vector<double> werte)
+{
+  double summe = 0;
+  for (int i=0; i<werte.size(); ++i)
+  {
+    summe=summe+werte[i];
+  }
+  return summe/werte.size();
+}
+
+//Berechung der Varianz
+double calculateVar(vector<double> werte)
+{
+  double mittel = calculateAverage(werte);
+  double summe = 0;
+  for (int i=0; i<werte.size(); ++i)
+  {
+    int a = pow(werte[i]-mittel,2);
+    summe=summe+a;
+  }
+  return summe/werte.size();
+  return 0;
+}
+
+
 
 int main() {
-  // mittelwert
-  std::ifstream dataIn("datensumme.txt");
-  int summe = 0;
-  int n = 0;
-  while (!dataIn.eof()) {
-    ++n;
-    int a = 0;
-    dataIn >> a;
-    summe = summe + a;
-  }
-  dataIn.close();
-  double mittelwert = summe / n;
-  std::cout << mittelwert << "\n";
+//Datei laden
+ifstream dataIn("datensumme.txt");
 
-  // varianz
-  std::ifstream dataIn2("datensumme.txt");
-  int summe2 = 0;
-  while (!dataIn2.eof()) {
-    int a = 0;
-    dataIn2 >> a;
-    int b = (a - mittelwert) * (a - mittelwert);
-    summe2 = summe2 + b;
-  }
-  dataIn2.close();
-  double varianz = summe2 / n;
-  std::cout << varianz << "\n";
+//Vektor füllen
+vector<double> messdaten;
+while (!dataIn.eof())
+{
+double a=0;
+dataIn>>a;
+messdaten.push_back(a);
+}
 
-  // abweichung
-  std::cout << sqrt(varianz) << "\n";
+//Berechnung & Ausgabe
+cout<<calculateAverage(messdaten)<<"\n";
+cout<<calculateVar(messdaten)<<"\n";
+cout<<sqrt(calculateVar(messdaten))<<"\n";
+
+//Datei schließen
+dataIn.close();
 }
