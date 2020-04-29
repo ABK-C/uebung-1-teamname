@@ -26,7 +26,6 @@ double calculateVar(vector<double> werte)
     summe=summe+a;
   }
   return summe/werte.size();
-  return 0;
 }
 
 

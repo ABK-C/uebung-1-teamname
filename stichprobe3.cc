@@ -10,32 +10,33 @@ double calculateAverage(vector<double> werte) {
   for (int i = 0; i < werte.size(); ++i) {
     summe = summe + werte[i];
   }
-  return summe / werte.size();
+  return summe / (werte.size() - 1);
 }
-
 
 int main() {
   // Datei laden
-  ifstream dataIn("datensumme.txt");
-  std::ofstream dataMit("mittelwert.txt");
-  std::ofstream dataVar("varianz.txt");
+  std::ifstream dataMit("mittelwert.txt");
+  std::ifstream dataVar("varianz.txt");
 
-  while (!dataIn.eof()) {
-    // Vektor füllen
-    vector<double> messdaten;
-    for (int i = 0; i < 9; ++i) {
-      double a = 0;
-      dataIn >> a;
-      messdaten.push_back(a);
-    }
-
-    // Berechnung & Speichern
-    dataMit << calculateAverage(messdaten) << "\n";
-    dataVar << calculateVar(messdaten) << "\n";
+  // Vektor füllen
+  vector<double> mittel;
+  while (!dataMit.eof()) {
+    double a = 0;
+    dataMit >> a;
+    mittel.push_back(a);
+  }
+  vector<double> varianzen;
+  while (!dataVar.eof()) {
+    double a = 0;
+    dataVar >> a;
+    varianzen.push_back(a);
   }
 
-  //Dateien schließen
-  dataIn.close();
+  // Berechnung & Ausgabe
+  cout << calculateAverage(mittel) << "\n";
+  cout << calculateAverage(varianzen) << "\n";
+
+  // Dateien schließen
   dataMit.close();
   dataVar.close();
 }
