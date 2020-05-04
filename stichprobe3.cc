@@ -33,8 +33,8 @@ int main() {
   }
 
   // Berechnung & Ausgabe
-  cout << calculateAverage(mittel) << "\n";
-  cout << calculateAverage(varianzen) << "\n";
+  cout << "Mittelwert: " << calculateAverage(mittel) << "\n";
+  cout << "Varianz: " << calculateAverage(varianzen) << "\n";
 
   // Dateien schließen
   dataMit.close();

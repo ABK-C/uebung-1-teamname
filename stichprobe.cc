@@ -44,9 +44,9 @@ messdaten.push_back(a);
 }
 
 //Berechnung & Ausgabe
-cout<<calculateAverage(messdaten)<<"\n";
-cout<<calculateVar(messdaten)<<"\n";
-cout<<sqrt(calculateVar(messdaten))<<"\n";
+cout<<"Mittelwert: "<<calculateAverage(messdaten)<<"\n";
+cout<<"Varianz: "<<calculateVar(messdaten)<<"\n";
+cout<<"Abweichung: "<<sqrt(calculateVar(messdaten))<<"\n";
 
 //Datei schließen
 dataIn.close();
