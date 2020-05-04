@@ -18,8 +18,7 @@ double calculateVar(vector<double> werte) {
   double mittel = calculateAverage(werte);
   double summe = 0;
   for (int i = 0; i < werte.size(); ++i) {
-    int a = pow(werte[i] - mittel, 2);
-    summe = summe + a;
+    summe = summe + (werte[i] - mittel) * (werte[i] - mittel);
   }
   return summe / werte.size();
 }
@@ -31,7 +30,7 @@ int main() {
   std::ofstream dataVar("varianz.txt");
 
   while (!dataIn.eof()) {
-    
+
     // Vektoren füllen
     vector<double> messdaten;
     for (int i = 0; i < 9; ++i) {
@@ -44,13 +43,11 @@ int main() {
     dataMit << calculateAverage(messdaten);
     dataVar << calculateVar(messdaten);
 
-
     dataMit << "\n";
     dataVar << "\n";
   }
 
-
-  //Dateien schließen
+  // Dateien schließen
   dataIn.close();
   dataMit.close();
   dataVar.close();
