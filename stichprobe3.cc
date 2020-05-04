@@ -15,8 +15,8 @@ double calculateAverage(vector<double> werte) {
 
 int main() {
   // Datei laden
-  std::ifstream dataMit("mittelwert.txt");
-  std::ifstream dataVar("varianz.txt");
+  std::ifstream dataMit("mittelwerte.txt");
+  std::ifstream dataVar("varianzen.txt");
 
   // Vektor füllen
   vector<double> mittel;

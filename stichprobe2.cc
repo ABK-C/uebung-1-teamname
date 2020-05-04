@@ -26,8 +26,8 @@ double calculateVar(vector<double> werte) {
 int main() {
   // Datei laden
   ifstream dataIn("datensumme.txt");
-  std::ofstream dataMit("mittelwert.txt");
-  std::ofstream dataVar("varianz.txt");
+  std::ofstream dataMit("mittelwerte.txt");
+  std::ofstream dataVar("varianzen.txt");
 
   while (!dataIn.eof()) {
 
